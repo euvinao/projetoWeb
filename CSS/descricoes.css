@@ -1,0 +1,135 @@
+:root {
+    --bg-color: #fff;
+    --text-color: #000000;
+    --second-color: #000000;
+    --third-color: #FDCA40;
+    --main-color: #AA040F;
+    --neutraone-color: #A1A1A1;
+    --neutratwo-color: #E6E8E6;
+    --big-font: 56px;
+    --h2-font: 48px;
+    --h3-font: 40px;
+    --h4-font: 32px;
+    --h5-font: 24px;
+    --h6-font: 20px;
+    --body: 16px;
+    --subtitle: 16px;
+    --button: 18px;
+    --caption: 12px;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 5px 5%;
+    background-color: var(--main-color);
+    border: 1px solid var(--second-color);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--neutratwo-color);
+    font-size: var(--subtitle);
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    background: var(--bg-color);
+    color: var(--main-color);
+    box-shadow: 5px 5px 20px rgb(85, 85, 85 / 20%);
+    border-radius: 5px;
+}
+
+
+
+.hero {
+    position: relative;
+    color: var(--bg-color);
+}
+
+.hero-image {
+    margin-top: 35px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    
+}
+
+.sinopse, .details, .trailers {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.sinopse p {
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.details .direção, .details .elenco {
+    flex: 1;
+    min-width: 250px;
+}
+
+.elenco {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.elenco-member {
+    text-align: center;
+}
+
+.elenco-member img {
+    width: 120px;
+    height: 140px;
+    border-radius: 5%;
+}
+
+.trailers-container {
+    display: flex;
+    gap: 20px;
+}
+
+.trailer img {
+    width: 100%;
+    height: auto;
+}
+

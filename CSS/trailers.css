@@ -1,0 +1,96 @@
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 5px 5%;
+    background-color: #AA040F;
+    border: 1px solid var(--second-color);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--neutratwo-color);
+    font-size: var(--subtitle);
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    background: var(--bg-color);
+    color: var(--main-color);
+    box-shadow: 5px 5px 20px rgb(85, 85, 85 / 20%);
+    border-radius: 5px;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    background: var(--main-color);
+    color: var(--bg-color);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    padding-left: 70px;
+    top: 60px;
+}
+
+.title {
+    text-align: left;
+    padding: 0px 50px;
+    margin-top: 15vh;
+}
+
+.destaque {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(00px, auto));
+    grid-gap: 4rem;
+    justify-content: left;
+    margin-top: 1rem;
+    
+}
+
+.thum {
+    position: relative;
+    transition: all .3s;
+    justify-content: space-evenly;
+    padding: 0px 50px;
+    will-change: filter;
+    cursor: pointer;
+}
+
+
+
+.thum img {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+.thum h4 {
+    position: relative;
+    margin-top: 5px;
+    text-align: left;
+}

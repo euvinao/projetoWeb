@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --bg-color: #fff;
+    --text-color: #000000;
+    --second-color: #000000;
+    --third-color: #FDCA40;
+    --main-color: #AA040F;
+    --neutraone-color: #A1A1A1;
+    --neutratwo-color: #E6E8E6;
+    --big-font: 56px;
+    --h2-font: 48px;
+    --h3-font: 40px;
+    --h4-font: 32px;
+    --h5-font: 24px;
+    --h6-font: 20px;
+    --body: 16px;
+    --subtitle: 16px;
+    --button: 18px;
+    --caption: 12px;
+}
